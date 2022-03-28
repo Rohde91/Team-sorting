@@ -1,6 +1,5 @@
 package com.zaah;
 
-import java.util.Comparator;
 //TODO superligaKlub = Teams
 
 public class Teams implements Comparable <Teams> {

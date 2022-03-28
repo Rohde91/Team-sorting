@@ -3,7 +3,10 @@ package com.zaah;
 import java.util.Comparator;
 
 public class PointsComparator implements Comparator<Teams> {
-    int compValue;
+
+    // Med int compare, går vi ind og sammenligner to integers
+    // Nedenfor kan man se rækkefølgen det vil blive udskrevet i.
+    // Med den måde return værdierne er skrevet på, bliver pointene skrevet ud med størst først (descending/aftagende).
 
     public int compare(Teams t1, Teams t2) {
 
@@ -14,5 +17,10 @@ public class PointsComparator implements Comparator<Teams> {
         } else {
             return 1;
         }
+        /*
+        * Ved at man skriver -1 ved else if
+        * Og ved at skrive 1 ved else
+        * Så får man udskrevet det i en aftagende rækkefølge
+        * */
     }
 }
